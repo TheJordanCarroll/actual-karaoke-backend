@@ -505,3 +505,1209 @@ No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_
 Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 0.6ms | Allocations: 3245)
 
 
+Started GET "/songs" for ::1 at 2021-03-22 12:02:27 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as */*
+  [1m[36mSong Load (31.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (6.31ms)
+Completed 200 OK in 132ms (Views: 39.9ms | ActiveRecord: 57.3ms | Allocations: 19592)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 12:02:58 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (8.31ms)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 0.6ms | Allocations: 3265)
+
+
+Started GET "/" for ::1 at 2021-03-22 12:10:01 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 25.5ms | Allocations: 315)
+Completed 200 OK in 373ms (Views: 50.2ms | Allocations: 2444)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 12:10:03 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (41.7ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.98ms)
+Completed 200 OK in 1113ms (Views: 1082.7ms | ActiveRecord: 270.1ms | Allocations: 7052)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 12:11:37 -0400
+Started GET "/songs" for ::1 at 2021-03-22 12:11:37 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (9.7ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (6.94ms)
+Completed 200 OK in 179ms (Views: 163.6ms | ActiveRecord: 9.7ms | Allocations: 1365)
+
+
+  [1m[36mSong Load (7.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (4.95ms)
+Completed 200 OK in 1465ms (Views: 529.7ms | ActiveRecord: 818.9ms | Allocations: 6594)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 12:11:43 -0400
+Started GET "/songs" for ::1 at 2021-03-22 12:11:43 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (1.2ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.55ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 1.2ms | Allocations: 1071)
+
+
+  [1m[36mSong Load (9.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (5.98ms)
+Completed 200 OK in 61ms (Views: 50.5ms | ActiveRecord: 9.0ms | Allocations: 4557)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 12:12:45 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 12:12:45 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (1.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+  [1m[36mFavoriteSong Load (1.0ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (11.38ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.63ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 1.0ms | Allocations: 4193)
+
+
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 1.3ms | Allocations: 4060)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 12:12:53 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 12:12:53 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (36.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (6.02ms)
+Completed 200 OK in 57ms (Views: 20.0ms | ActiveRecord: 36.1ms | Allocations: 4027)
+
+
+  [1m[36mFavoriteSong Load (22.6ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.51ms)
+Completed 200 OK in 58ms (Views: 34.6ms | ActiveRecord: 22.6ms | Allocations: 4384)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 12:42:56 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 12:42:56 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (16.7ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.41ms)
+  [1m[36mSong Load (5.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+Completed 200 OK in 373ms (Views: 372.7ms | ActiveRecord: 201.8ms | Allocations: 4827)
+
+
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (4.28ms)
+Completed 200 OK in 452ms (Views: 438.4ms | ActiveRecord: 212.3ms | Allocations: 9067)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 12:45:27 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 12:45:27 -0400
+Processing by FavoriteSongsController#index as */*
+Processing by SongsController#index as */*
+  [1m[36mFavoriteSong Load (2.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (4.62ms)
+Completed 200 OK in 47ms (Views: 37.7ms | ActiveRecord: 2.5ms | Allocations: 1337)
+
+
+  [1m[36mSong Load (35.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (180.45ms)
+Completed 200 OK in 252ms (Views: 212.1ms | ActiveRecord: 35.2ms | Allocations: 4432)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 12:45:43 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 12:45:43 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (14.9ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.47ms)
+Completed 200 OK in 48ms (Views: 32.4ms | ActiveRecord: 14.9ms | Allocations: 1050)
+
+
+  [1m[36mSong Load (56.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (8.21ms)
+Completed 200 OK in 133ms (Views: 75.7ms | ActiveRecord: 56.3ms | Allocations: 5166)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 13:26:48 -0400
+Started GET "/songs" for ::1 at 2021-03-22 13:26:48 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (1.3ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+  [1m[36mSong Load (48.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (7.41ms)
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+Completed 200 OK in 491ms (Views: 484.3ms | ActiveRecord: 152.3ms | Allocations: 5541)
+
+
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (15.18ms)
+Completed 200 OK in 725ms (Views: 694.9ms | ActiveRecord: 202.5ms | Allocations: 8645)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 13:39:05 -0400
+Started GET "/songs" for ::1 at 2021-03-22 13:39:05 -0400
+Processing by FavoriteSongsController#index as */*
+Processing by SongsController#index as */*
+  [1m[36mFavoriteSong Load (3.0ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (32.2ms)
+Completed 200 OK in 284ms (Views: 278.3ms | ActiveRecord: 70.9ms | Allocations: 4122)
+
+
+  [1m[36mSong Load (7.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (13.86ms)
+Completed 200 OK in 385ms (Views: 379.9ms | ActiveRecord: 195.5ms | Allocations: 8251)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 13:39:10 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 13:39:10 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (1.6ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (2.67ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 1.6ms | Allocations: 1050)
+
+
+  [1m[36mSong Load (30.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (4.69ms)
+Completed 200 OK in 69ms (Views: 37.0ms | ActiveRecord: 30.1ms | Allocations: 4744)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 13:49:45 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (2.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (39.07ms)
+Completed 200 OK in 284ms (Views: 277.6ms | ActiveRecord: 44.6ms | Allocations: 5276)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 13:51:40 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 13:51:40 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (27.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (7.28ms)
+Completed 200 OK in 163ms (Views: 130.2ms | ActiveRecord: 27.2ms | Allocations: 3640)
+
+
+  [1m[36mFavoriteSong Load (1.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.09ms)
+Completed 200 OK in 556ms (Views: 399.0ms | ActiveRecord: 146.4ms | Allocations: 6522)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 13:54:07 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (0.9ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.82ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.9ms | Allocations: 1011)
+
+
+Started GET "/users" for ::1 at 2021-03-22 13:57:52 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (34.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 1, email: "jordancarroll1994@gmail.com", username: "jordancarroll", password: [FILTERED], image: "https://upload.wikimedia.org/wikipedia/commons/thu...", created_at: "2021-03-22 00:55:08.957284000 +0000", updated_at: "2021-03-22 00:55:08.957284000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (1.23ms)
+Completed 200 OK in 333ms (Views: 118.5ms | ActiveRecord: 103.0ms | Allocations: 6288)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 13:59:38 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.6ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (5.1ms)
+Completed 200 OK in 47ms (Views: 35.3ms | ActiveRecord: 1.6ms | Allocations: 1011)
+
+
+Started GET "/favorite_songs/1" for ::1 at 2021-03-22 14:00:07 -0400
+Processing by FavoriteSongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFavoriteSong Load (20.8ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs" WHERE "favorite_songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_songs_controller.rb:16:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with FavoriteSong (1.27ms)
+Completed 200 OK in 306ms (Views: 70.7ms | ActiveRecord: 21.4ms | Allocations: 2791)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:00:11 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (0.7ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.77ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.7ms | Allocations: 1011)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:03:24 -0400
+Started GET "/songs" for ::1 at 2021-03-22 14:03:24 -0400
+Processing by FavoriteSongsController#index as */*
+Processing by SongsController#index as */*
+  [1m[36mFavoriteSong Load (6.6ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (3.95ms)
+Completed 200 OK in 207ms (Views: 196.0ms | ActiveRecord: 6.6ms | Allocations: 1357)
+
+
+  [1m[36mSong Load (1.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (15.34ms)
+Completed 200 OK in 519ms (Views: 403.6ms | ActiveRecord: 114.3ms | Allocations: 6467)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:03:56 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:03:56 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (1.2ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+  [1m[36mSong Load (4.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (12.52ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 1.2ms | Allocations: 4129)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (7.67ms)
+Completed 200 OK in 50ms (Views: 40.0ms | ActiveRecord: 4.3ms | Allocations: 4728)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:08:58 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:08:58 -0400
+Processing by FavoriteSongsController#index as */*
+Processing by SongsController#index as */*
+  [1m[36mFavoriteSong Load (2.9ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+  [1m[36mSong Load (25.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (5.14ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (5.58ms)
+Completed 200 OK in 123ms (Views: 98.9ms | ActiveRecord: 2.9ms | Allocations: 4372)
+
+
+Completed 200 OK in 80ms (Views: 52.6ms | ActiveRecord: 25.5ms | Allocations: 4182)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:19:08 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (12.74ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 23.6ms | Allocations: 3099)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-03-22 14:19:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:25:13 -0400
+Started GET "/songs" for ::1 at 2021-03-22 14:25:13 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (1.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+  [1m[36mFavoriteSong Load (1.0ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (3.38ms)
+Completed 200 OK in 186ms (Views: 156.0ms | ActiveRecord: 53.4ms | Allocations: 8091)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (17.39ms)
+Completed 200 OK in 311ms (Views: 291.2ms | ActiveRecord: 54.2ms | Allocations: 8847)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:25:33 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:25:33 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (1.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (5.79ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 1.8ms | Allocations: 3647)
+
+
+  [1m[36mFavoriteSong Load (5.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.49ms)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 5.4ms | Allocations: 4419)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:36:05 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:36:05 -0400
+Processing by FavoriteSongsController#index as */*
+Processing by SongsController#index as */*
+  [1m[36mSong Load (4.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (8.53ms)
+Completed 200 OK in 305ms (Views: 303.8ms | ActiveRecord: 64.0ms | Allocations: 7002)
+
+
+  [1m[36mFavoriteSong Load (11.6ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (2.11ms)
+Completed 200 OK in 362ms (Views: 353.9ms | ActiveRecord: 84.7ms | Allocations: 8835)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:36:25 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:36:25 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (1.2ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  [1m[36mSong Load (47.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.47ms)
+Completed 200 OK in 188ms (Views: 186.5ms | ActiveRecord: 1.2ms | Allocations: 2987)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (243.7ms)
+Completed 200 OK in 331ms (Views: 283.2ms | ActiveRecord: 47.5ms | Allocations: 5166)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:36:30 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:36:30 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (11.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+  [1m[36mFavoriteSong Load (15.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (89.96ms)
+Completed 200 OK in 179ms (Views: 156.0ms | ActiveRecord: 11.3ms | Allocations: 4457)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (21.26ms)
+Completed 200 OK in 169ms (Views: 152.9ms | ActiveRecord: 15.4ms | Allocations: 4418)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:36:32 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:36:32 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (2.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+  [1m[36mFavoriteSong Load (37.1ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (25.83ms)
+Completed 200 OK in 104ms (Views: 101.5ms | ActiveRecord: 2.0ms | Allocations: 4211)
+
+
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.51ms)
+Completed 200 OK in 107ms (Views: 69.7ms | ActiveRecord: 37.1ms | Allocations: 4419)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:36:34 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:36:34 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (49.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+  [1m[36mFavoriteSong Load (13.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (29.79ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (4.22ms)
+Completed 200 OK in 100ms (Views: 85.7ms | ActiveRecord: 13.5ms | Allocations: 4160)
+
+
+Completed 200 OK in 116ms (Views: 66.8ms | ActiveRecord: 49.3ms | Allocations: 4871)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:36:41 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:36:41 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (3.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (8.46ms)
+Completed 200 OK in 142ms (Views: 138.1ms | ActiveRecord: 3.5ms | Allocations: 3414)
+
+
+  [1m[36mFavoriteSong Load (96.9ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.37ms)
+Completed 200 OK in 149ms (Views: 51.7ms | ActiveRecord: 96.9ms | Allocations: 4421)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:37:22 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:37:22 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (1.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (4.22ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 1.9ms | Allocations: 3578)
+
+
+  [1m[36mFavoriteSong Load (2.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.39ms)
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 2.4ms | Allocations: 4424)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:37:56 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:37:56 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (0.9ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.61ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.9ms | Allocations: 1127)
+
+
+  [1m[36mSong Load (11.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (7.69ms)
+Completed 200 OK in 47ms (Views: 32.9ms | ActiveRecord: 11.1ms | Allocations: 4730)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:37:58 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:37:58 -0400
+Processing by FavoriteSongsController#index as */*
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (5.67ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 1.9ms | Allocations: 3279)
+
+
+  [1m[36mFavoriteSong Load (8.2ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.74ms)
+Completed 200 OK in 58ms (Views: 49.0ms | ActiveRecord: 8.2ms | Allocations: 4522)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:38:00 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:38:00 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (22.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.85ms)
+Completed 200 OK in 47ms (Views: 24.6ms | ActiveRecord: 22.5ms | Allocations: 1050)
+
+
+  [1m[36mSong Load (48.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (6.42ms)
+Completed 200 OK in 84ms (Views: 35.4ms | ActiveRecord: 48.7ms | Allocations: 4956)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:38:07 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:38:07 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (2.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (13.71ms)
+Completed 200 OK in 51ms (Views: 46.2ms | ActiveRecord: 2.3ms | Allocations: 3753)
+
+
+  [1m[36mFavoriteSong Load (5.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (2.19ms)
+Completed 200 OK in 60ms (Views: 54.6ms | ActiveRecord: 5.5ms | Allocations: 4419)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:38:14 -0400
+Started GET "/songs" for ::1 at 2021-03-22 14:38:14 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (4.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (9.17ms)
+Completed 200 OK in 21ms (Views: 16.5ms | ActiveRecord: 4.5ms | Allocations: 3607)
+
+
+  [1m[36mFavoriteSong Load (44.8ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.62ms)
+Completed 200 OK in 59ms (Views: 13.9ms | ActiveRecord: 44.8ms | Allocations: 4384)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:38:19 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:38:19 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (4.1ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (3.61ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 4.1ms | Allocations: 1050)
+
+
+  [1m[36mSong Load (21.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (5.97ms)
+Completed 200 OK in 70ms (Views: 46.1ms | ActiveRecord: 21.4ms | Allocations: 5166)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:38:25 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:38:25 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (0.6ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.98ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.6ms | Allocations: 1050)
+
+
+  [1m[36mSong Load (37.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (7.21ms)
+Completed 200 OK in 158ms (Views: 119.3ms | ActiveRecord: 37.8ms | Allocations: 4995)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:38:30 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:38:30 -0400
+Processing by FavoriteSongsController#index as */*
+Processing by SongsController#index as */*
+  [1m[36mFavoriteSong Load (10.2ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.58ms)
+Completed 200 OK in 25ms (Views: 14.7ms | ActiveRecord: 10.2ms | Allocations: 1326)
+
+
+  [1m[36mSong Load (42.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (6.19ms)
+Completed 200 OK in 66ms (Views: 23.0ms | ActiveRecord: 42.3ms | Allocations: 4419)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:38:32 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:38:32 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (1.3ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  [1m[36mSong Load (2.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (5.46ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 2.2ms | Allocations: 4091)
+
+
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.5ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 1.3ms | Allocations: 4419)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:38:52 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:38:52 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (8.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (9.21ms)
+  [1m[36mFavoriteSong Load (14.7ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.43ms)
+Completed 200 OK in 211ms (Views: 195.6ms | ActiveRecord: 14.7ms | Allocations: 4195)
+
+
+Completed 200 OK in 217ms (Views: 207.7ms | ActiveRecord: 8.8ms | Allocations: 4048)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:39:25 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:39:25 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mFavoriteSong Load (3.0ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+  [1m[36mSong Load (12.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (2.68ms)
+Completed 200 OK in 70ms (Views: 55.7ms | ActiveRecord: 3.0ms | Allocations: 1279)
+
+
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (10.2ms)
+Completed 200 OK in 97ms (Views: 75.9ms | ActiveRecord: 12.2ms | Allocations: 4745)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 14:39:37 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:39:37 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (1.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (4.06ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 1.4ms | Allocations: 3992)
+
+
+  [1m[36mFavoriteSong Load (1.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.86ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 1.5ms | Allocations: 4419)
+
+
+Started POST "/favorite_comments" for ::1 at 2021-03-22 14:54:03 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/favorite_comments"):
+  
+Started GET "/songs" for ::1 at 2021-03-22 14:56:51 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:56:51 -0400
+Processing by SongsController#index as */*
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (4.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mFavoriteSong Load (5.2ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (86.02ms)
+Completed 200 OK in 565ms (Views: 535.6ms | ActiveRecord: 141.7ms | Allocations: 8352)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.95ms)
+Completed 200 OK in 487ms (Views: 483.6ms | ActiveRecord: 133.5ms | Allocations: 8049)
+
+
+Started POST "/favorite_songs" for ::1 at 2021-03-22 14:57:07 -0400
+Processing by FavoriteSongsController#create as */*
+  Parameters: {"note"=>"", "favorite_song"=>{"note"=>""}}
+[31mUnpermitted parameter: :favorite_song[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with FavoriteSong (0.2ms)
+Completed 200 OK in 189ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2826)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:57:29 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (0.7ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.57ms)
+Completed 200 OK in 24ms (Views: 19.1ms | ActiveRecord: 0.7ms | Allocations: 1014)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-03-22 14:57:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favorite_songs" for ::1 at 2021-03-22 14:57:31 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.1ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.39ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 1.1ms | Allocations: 1010)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 15:00:31 -0400
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:00:31 -0400
+Processing by FavoriteSongsController#index as */*
+Processing by SongsController#index as */*
+  [1m[36mSong Load (26.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (8.91ms)
+Completed 200 OK in 86ms (Views: 48.1ms | ActiveRecord: 26.8ms | Allocations: 3362)
+
+
+  [1m[36mFavoriteSong Load (4.6ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.05ms)
+Completed 200 OK in 123ms (Views: 107.9ms | ActiveRecord: 4.6ms | Allocations: 4706)
+
+
+Started POST "/favorite_songs" for ::1 at 2021-03-22 15:00:34 -0400
+Processing by FavoriteSongsController#create as */*
+  Parameters: {"user_id"=>1, "note"=>"", "favorite_song"=>{"user_id"=>1, "note"=>""}}
+[31mUnpermitted parameter: :favorite_song[0m
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/favorite_songs_controller.rb:11:in `create'
+  [1m[36mUser Load (33.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorite_songs_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (18.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/favorite_songs_controller.rb:11:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with FavoriteSong (0.25ms)
+Completed 200 OK in 371ms (Views: 1.3ms | ActiveRecord: 71.8ms | Allocations: 4281)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 15:00:51 -0400
+Processing by SongsController#index as */*
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:00:51 -0400
+Processing by FavoriteSongsController#index as */*
+  [1m[36mSong Load (2.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (4.56ms)
+Completed 200 OK in 85ms (Views: 81.6ms | ActiveRecord: 2.5ms | Allocations: 4026)
+
+
+  [1m[36mFavoriteSong Load (22.1ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.37ms)
+Completed 200 OK in 93ms (Views: 70.8ms | ActiveRecord: 22.1ms | Allocations: 4419)
+
+
+Started GET "/" for ::1 at 2021-03-22 15:30:15 -0400
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.7ms | Allocations: 315)
+Completed 200 OK in 51ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 2452)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:30:18 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (7.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.86ms)
+Completed 200 OK in 61ms (Views: 24.8ms | ActiveRecord: 24.1ms | Allocations: 6774)
+
+
+Started GET "/" for ::1 at 2021-03-22 15:39:32 -0400
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.1ms | Allocations: 315)
+Completed 200 OK in 81ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 2453)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:39:35 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (54.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.87ms)
+Completed 200 OK in 273ms (Views: 34.9ms | ActiveRecord: 196.1ms | Allocations: 6663)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:41:15 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.8ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.47ms)
+Completed 200 OK in 100ms (Views: 22.1ms | ActiveRecord: 30.5ms | Allocations: 8767)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:41:21 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (0.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.56ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 1032)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:41:47 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.0ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (0.86ms)
+Completed 200 OK in 78ms (Views: 41.2ms | ActiveRecord: 7.1ms | Allocations: 8767)
+
+
+Started GET "/" for ::1 at 2021-03-22 15:44:29 -0400
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 61.7ms | Allocations: 315)
+Completed 200 OK in 102ms (Views: 68.7ms | ActiveRecord: 0.0ms | Allocations: 2455)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 15:44:36 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (18.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (16.12ms)
+Completed 200 OK in 182ms (Views: 94.8ms | ActiveRecord: 45.2ms | Allocations: 17484)
+
+
+Started GET "/songs/1" for ::1 at 2021-03-22 15:44:37 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (7.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:16:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Song (4.81ms)
+Completed 200 OK in 67ms (Views: 21.9ms | ActiveRecord: 13.8ms | Allocations: 1490)
+
+
+Started GET "/songs" for ::1 at 2021-03-22 15:48:01 -0400
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (1.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+No serializer found for resource: #<Song id: 1, name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33, highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The...", rap_sing: "Sing", range: 19, hit_year: 2020, created_at: "2021-03-22 00:55:09.146578000 +0000", updated_at: "2021-03-22 00:55:09.146578000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (9.51ms)
+Completed 200 OK in 276ms (Views: 160.5ms | ActiveRecord: 66.4ms | Allocations: 19589)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:48:10 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.8ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.41ms)
+Completed 200 OK in 100ms (Views: 42.7ms | ActiveRecord: 41.8ms | Allocations: 4917)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:48:44 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (0.9ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.33ms)
+Completed 200 OK in 52ms (Views: 20.8ms | ActiveRecord: 12.9ms | Allocations: 8767)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:49:08 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.0ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (2.72ms)
+Completed 200 OK in 66ms (Views: 32.5ms | ActiveRecord: 7.4ms | Allocations: 8766)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:49:51 -0400
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (0.7ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.7ms)
+Completed 200 OK in 45ms (Views: 16.5ms | ActiveRecord: 9.2ms | Allocations: 8767)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:54:53 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (0.7ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+No serializer found for resource: #<FavoriteSong id: 1, user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one beca...", created_at: "2021-03-22 00:55:09.264216000 +0000", updated_at: "2021-03-22 00:55:09.264216000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with FavoriteSong::ActiveRecord_Relation (1.9ms)
+Completed 200 OK in 71ms (Views: 18.3ms | ActiveRecord: 22.8ms | Allocations: 8767)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:56:17 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.6ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (24.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mFavoriteSong Load (7.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs" WHERE "favorite_songs"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (469.33ms)
+Completed 500 Internal Server Error in 652ms (ActiveRecord: 54.8ms | Allocations: 78444)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/favorite_songs_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2021-03-22 15:56:33 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 65.8ms | Allocations: 316)
+Completed 200 OK in 393ms (Views: 175.7ms | ActiveRecord: 0.0ms | Allocations: 19743)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:56:37 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (157.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (208.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (206.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:56:41 -0400
+Processing by FavoriteSongsController#index as HTML
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (202.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mFavoriteSong Load (101.6ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs" WHERE "favorite_songs"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3144.92ms)
+Completed 500 Internal Server Error in 5811ms (ActiveRecord: 2551.4ms | Allocations: 1579191)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/favorite_songs_controller.rb:4:in `index'
+  [1m[36mFavoriteSong Load (145.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (218.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (654.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (413.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mFavoriteSong Load (105.2ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs" WHERE "favorite_songs"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5268.69ms)
+Completed 500 Internal Server Error in 9257ms (ActiveRecord: 3419.1ms | Allocations: 2486688)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/favorite_songs_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2021-03-22 15:58:26 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CarrollJ/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 30.3ms | Allocations: 315)
+Completed 200 OK in 90ms (Views: 52.0ms | ActiveRecord: 0.0ms | Allocations: 2452)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 15:58:30 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.8ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mFavoriteSong Load (0.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs" WHERE "favorite_songs"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (789.28ms)
+Completed 500 Internal Server Error in 1048ms (ActiveRecord: 63.6ms | Allocations: 78663)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/favorite_songs_controller.rb:4:in `index'
+Started GET "/favorite_songs" for ::1 at 2021-03-22 16:00:11 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (241.1ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (3.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (1.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (360.68ms)
+Completed 200 OK in 896ms (Views: 376.4ms | ActiveRecord: 460.7ms | Allocations: 32764)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 16:01:15 -0400
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.1ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mFavoriteSong Load (0.5ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs" WHERE "favorite_songs"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (763.9ms)
+Completed 500 Internal Server Error in 901ms (ActiveRecord: 63.6ms | Allocations: 80368)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/favorite_songs_controller.rb:4:in `index'
+Started GET "/favorite_songs" for ::1 at 2021-03-22 16:03:07 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (3.3ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (9.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mFavoriteSong Load (0.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs" WHERE "favorite_songs"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE Song Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (488.6ms)
+Completed 500 Internal Server Error in 644ms (ActiveRecord: 87.7ms | Allocations: 80415)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/favorite_songs_controller.rb:4:in `index'
+Started GET "/favorite_songs" for ::1 at 2021-03-22 16:04:04 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (1.9ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (1.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (10.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (379.48ms)
+Completed 200 OK in 489ms (Views: 314.9ms | ActiveRecord: 132.9ms | Allocations: 32761)
+
+
+Started GET "/favorite_songs" for ::1 at 2021-03-22 16:06:11 -0400
+Processing by FavoriteSongsController#index as HTML
+  [1m[36mFavoriteSong Load (0.4ms)[0m  [1m[34mSELECT "favorite_songs".* FROM "favorite_songs"[0m
+  ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mSong Load (2.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/favorite_songs_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.21ms)
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 4.3ms | Allocations: 4917)
+
+
