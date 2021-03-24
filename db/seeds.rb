@@ -20,6 +20,9 @@ Artist.create(name: "Cardi B", image: "https://upload.wikimedia.org/wikipedia/en
 Artist.create(name: "Lizzo", image: "https://upload.wikimedia.org/wikipedia/en/d/dd/Lizzo_-_Cuz_I_Love_You.png")
 Artist.create(name: "Jawsh 685 x Jason Derulo", image: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Jawsh_685_and_Jason_Derulo_-_Savage_Love_%28Laxed_%E2%80%93_Siren_Beat%29.png")
 Artist.create(name: "Billie Eilish", image: "https://images-na.ssl-images-amazon.com/images/I/71SHkMeVdhL._SL1500_.jpg")
+Artist.create(name: "Olivia Rodrigo", image: "https://static.stereogum.com/uploads/2021/01/Olivia-Rodrigo-1610556343.jpg")
+Artist.create(name: "Kendrick Lamar", image: "https://images-na.ssl-images-amazon.com/images/I/61DqlsKO22L._SL1400_.jpg")
+
 
 # /// Genres ///
 Genre.create(name: "Synth-pop")
@@ -31,6 +34,8 @@ Genre.create(name: "Rap")
 Genre.create(name: "R&B")
 Genre.create(name: "Dancehall")
 Genre.create(name: "Electropop")
+Genre.create(name: "Bedroom Pop")
+
 
 # /// Songs ///
 Song.create(name: "Blinding Lights", artist_id: 1, artist_gender: "Male", lowest_pitch: 33,  highest_pitch: 52, lowest_note: "F3", highest_note: "C5", genre_id: 1, year: 2019, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/e/e6/The_Weeknd_-_Blinding_Lights.png", rap_sing: "Sing", range: 19, hit_year: 2020)
@@ -43,6 +48,8 @@ Song.create(name: "Heartless", artist_id: 1, artist_gender: "Male", lowest_pitch
 Song.create(name: "Good as Hell", artist_id: 7, artist_gender: "Female", lowest_pitch: 38,  highest_pitch: 55, lowest_note: "Bb3", highest_note: "Eb5", genre_id: 4, year: 2016, tempo: "Mid", mood: "Happy", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/en/1/1c/Lizzo_-_Good_as_Hell.png", rap_sing: "Both", range: 17, hit_year: 2020)
 Song.create(name: "Savage Love (Laxed – Siren Beat)", artist_id: 8, artist_gender: "Male", lowest_pitch: 38,  highest_pitch: 57, lowest_note: "Bb3", highest_note: "F5", genre_id: 8, year: 2020, tempo: "Up", mood: "Sad", key: "E-flat major", image: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Jawsh_685_and_Jason_Derulo_-_Savage_Love_%28Laxed_%E2%80%93_Siren_Beat%29.png", rap_sing: "Sing", range: 19, hit_year: 2020)
 Song.create(name: "Bad Guy", artist_id: 9, artist_gender: "Female", lowest_pitch: 34,  highest_pitch: 45, lowest_note: "F#3", highest_note: "F4", genre_id: 9, year: 2019, tempo: "Up", mood: "Raunchy", key: "G minor", image: "https://upload.wikimedia.org/wikipedia/en/3/38/When_We_All_Fall_Asleep%2C_Where_Do_We_Go%3F.png", rap_sing: "Sing", range: 13, hit_year: 2020)
+Song.create(name: "drivers license", artist_id: 10, artist_gender: "Female", lowest_pitch: 35,  highest_pitch: 57, lowest_note: "G3", highest_note: "F5", genre_id: 10, year: 2021, tempo: "Down", mood: "Sad", key: "B-flat major", image: "https://upload.wikimedia.org/wikipedia/en/0/09/Drivers_License_by_Olivia_Rodrigo.png", rap_sing: "Sing", range: 22, hit_year: 2021)
+Song.create(name: "Humble", artist_id: 11, artist_gender: "Male", lowest_pitch: nil,  highest_pitch: nil, lowest_note: "N/A", highest_note: "N/A", genre_id: 6, year: 2017, tempo: "Up", mood: "Happy", key: "E-flat minor", image: "https://upload.wikimedia.org/wikipedia/en/5/58/Humble_kendrick_lamar.jpg", rap_sing: "Rap", range: nil, hit_year: 2017)
 
 # /// FavoriteSongs ///
 FavoriteSong.create(user_id: 1, song_id: 1, note: "Make sure you warm up before singing this one because it's pretty high.")
