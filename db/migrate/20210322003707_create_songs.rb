@@ -17,6 +17,7 @@ class CreateSongs < ActiveRecord::Migration[6.1]
       t.string :rap_sing
       t.integer :range
       t.integer :hit_year
+      t.boolean :favorited
 
       t.timestamps
     end

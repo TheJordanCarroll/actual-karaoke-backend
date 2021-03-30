@@ -21,6 +21,7 @@ class SongsController < ApplicationController
     end
   
     def update
+      # byebug
       song = Song.find(params[:id])
       song.update(song_params)
       render json: song
@@ -34,6 +35,6 @@ class SongsController < ApplicationController
   
     private
     def song_params
-        params.permit(:id, :name, :artist_id, :artist_gender, :lowest_pitch, :highest_pitch, :lowest_note, :highest_note, :genre_id, :year, :tempo, :mood, :key, :image, :rap_sing, :range, :hit_year)
+        params.permit(:id, :name, :artist_id, :artist_gender, :lowest_pitch, :highest_pitch, :lowest_note, :highest_note, :genre_id, :year, :tempo, :mood, :key, :image, :rap_sing, :range, :hit_year, :favorited)
     end
 end

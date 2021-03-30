@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 2021_03_22_003839) do
     t.string "rap_sing"
     t.integer "range"
     t.integer "hit_year"
+    t.boolean "favorited"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
