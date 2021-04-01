@@ -10,10 +10,28 @@ class SongsController < ApplicationController
       songs=Song.all
       # byebug
       if params[:genre] && params[:genre] != "All"
-      songs=songs.select{|song| song.genre.name==params[:genre]}
+      songs=songs.select{|song| song.genre.name.downcase.include? params[:genre].downcase}
+      end
+      if params[:speed] && params[:speed] != "All"
+        songs=songs.select{|song| song.tempo.downcase.include? params[:speed].downcase}
+      end
+      if params[:year] && params[:year] != "All"
+        songs=songs.select{|song| song.year == params[:year].to_i}
       end
       if params[:lowpitch]
         songs=songs.select{|song| !song.lowest_pitch ? true : song.lowest_pitch>=params[:lowpitch].to_i}
+      end
+      if params[:highpitch]
+        songs=songs.select{|song| !song.highest_pitch ? true : song.highest_pitch<=params[:highpitch].to_i}
+      end
+      if params[:songname]
+        songs=songs.select{|song| song.name.downcase.include? params[:songname].downcase}
+      end
+      if params[:artistname]
+        songs=songs.select{|song| song.artist.name.downcase.include? params[:artistname].downcase}
+      end
+      if params[:rapsing] && params[:rapsing] != "All"
+        songs=songs.select{|song| song.rap_sing == params[:rapsing]}
       end
       paginated_songs = paginate songs, per_page: 4
       render json: { songs: paginated_songs.map{|song| SongSerializer.new(song)}, meta_data: pagination_meta_data(paginated_songs)}
