@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/me", to: "users#show"
+  post "/signin", to: "users#signin"
+  post "/login", to: "users#login"
+  patch "/me", to: "users#update"
+  
   get '/genres', to: 'genres#index'
   get '/genres/new', to: 'genres#new', as: 'new_genre'
   post '/genres', to: 'genres#create'
@@ -15,6 +20,8 @@ Rails.application.routes.draw do
   get '/songs/:id/edit', to: 'songs#edit', as: 'edit_song'
   delete '/songs/:id', to: 'songs#destroy'
   patch '/songs/:id', to: 'songs#update'
+  get '/search', to: 'songs#search'
+
 
   get '/artists', to: 'artists#index'
   get '/artists/new', to: 'artists#new', as: 'new_artist'
@@ -35,7 +42,7 @@ Rails.application.routes.draw do
   get '/users', to: 'users#index'
   get '/users/new', to: 'users#new', as: 'new_user'
   post '/users', to: 'users#create'
-  get '/users/:id', to: 'users#show'
+  # get '/users/:id', to: 'users#show'
   get '/users/:id/edit', to: 'users#edit', as: 'edit_user'
   delete '/users/:id', to: 'users#destroy'
   patch '/users/:id', to: 'users#update'
